@@ -1,0 +1,84 @@
+body
+{
+    background-color: gainsboro;
+}
+
+.navbar
+{
+    background-color: darkslateblue;
+    height: 55px;
+}
+
+.navbar a
+{
+    float: left;
+    display: block;
+    color: lavender;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul
+{
+    padding: 2px 0 0 0 ;
+    list-style: none;
+}
+
+.navbar a:hover
+{
+    background-color: lavender;
+    color: darkslateblue;
+}
+
+/* #line:hover
+{
+    color: darkslateblue;
+} */
+
+.slide-nav
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+    transition: 0.6s;
+    padding-top: 60px;
+}
+
+.slide-nav a
+{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: gainsboro;
+    display: block;
+    transition: 0.3s;
+}
+
+.slide-nav a:hover
+{
+    color:plum;
+}
+
+.slide-nav .btn-close
+{
+    position: absolute;
+    top: 0;
+    right: 22px;
+} 
+
+#main
+{
+    transition:margin-left 0.5s;
+    padding-left: 20px;
+}
+
+@media(max-width: 568px)
+{
+    .list { display: none; }
+}
